@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Haven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .nav-item {
+                @apply text-gray-600 text-base hidden sm:hidden xl:block hover:text-black transition-colors;
+            }
+            .nav-item.active {
+                @apply text-black font-bold;
+            }
+        }
+        .inter{
+          font-family: "Inter", san-serif;
+        }
+        .noto{
+          font-family: "Noto Serif", serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F5F8FF] inter">
+
+  <header class="flex items-center p-5 xl:h-20 xl:w-[1140px] sm:h-10 sm:w-[361px] mx-auto">
+    <div class="logo">
+      <img src="images/logo.png" alt="Bloom Haven" class="h-10">
+    </div>
+    <nav class="ml-auto flex items-center gap-5">
+      <a href="#" class="nav-item active">Home</a>
+      <a href="#" class="nav-item">Shop</a>
+      <a href="#" class="nav-item">About us</a>
+      <div class="cart flex items-center gap-1">
+        <img class="w-5" src="images/cart.png" alt="Shopping cart">
+        <span class="text-black text-base">Cart ($56)</span>
+      </div>
+    </nav>
+  </header>
+
+
+
+</body>
+</html>
